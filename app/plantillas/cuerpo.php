@@ -1,8 +1,8 @@
 <body>
     <?php include TEMPLATE_PATH . "header.php" ?>
-    <a href="">Crear tarea</a>
-    <a href="">Ver tareas</a>
+    <a href="../index.php">Crear tarea</a>
+    <a href="../index.php">Ver tareas</a>
     <div id="contenedor">
-        <p>Cuerpo</p>
+        <p><?php include CTRL_PATH."ctrlcuerpo.php" ?></p>
     </div>
     <?php include 'footer.php' ?>

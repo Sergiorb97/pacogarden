@@ -10,5 +10,5 @@
 
 <body>
     <header>ENCABEZADO</header>
-    <div id="menu"><?php include CTRL_PATH."ctrlmenu.php" ?></div>
+    <div id="menu"><?php include TEMPLATE_PATH."menu.php" ?></div>
     <div id="cuerpo"><?php  ?></div>

@@ -1,5 +1,10 @@
 <?php
-    include '../config.php';
-    //if()
-        include(TEMPLATE_PATH.'cuerpo.php');
-?>
+$opc = getOpc();
+
+if($opc == 'crear'){
+    include(VIEW_PATH.'CrearTarea.php');
+}else if($opc == 'ver'){
+
+}else{
+    echo 'Error no existen parametros';
+}

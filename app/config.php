@@ -6,4 +6,4 @@ define('VIEW_PATH', __DIR__ . '/view/');
 define('TEMPLATE_PATH',__DIR__.'/plantillas/');
 
 
-define('BASE_URL', 'localhost/php/PROYECTO PHP/app/');
+//define('BASE_URL', 'localhost/php/PROYECTO PHP/app/');
