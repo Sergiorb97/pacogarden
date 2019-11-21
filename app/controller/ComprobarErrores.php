@@ -32,8 +32,9 @@ function DesNom($descripcion,$nombreContacto){
 
 function tel($telefono){
     if(!empty($telefono)){
-        if(strlen($telefono) == 9){
-            echo $telefono;//CONTINUAR
+        $expresionReg = '/^((\+?34([ \t|\-])?)?[9|6|7]((\d{1}([ \t|\-])?[0-9]{3})|(\d{2}([ \t|\-])?[0-9]{2}))([ \t|\-])?[0-9]{2}([ \t|\-])?[0-9]{2})$/';
+        if(preg_match($expresionReg,$telefono)){
+            return true;
         }else{
             return false;
         }

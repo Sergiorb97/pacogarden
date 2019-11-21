@@ -36,7 +36,7 @@ $operario = ValorPost("operariosAsig");*/
     $operario
 );*/
 
-comprobarTODO(
+if(comprobarTODO(
     ValorPost("descripcion"),
     ValorPost("nombrecontacto"),
     ValorPost("telefono"),
@@ -51,6 +51,12 @@ comprobarTODO(
     ValorPost("Aanterior"),
     ValorPost("Aposterior"),
     ValorPost("operariosAsig")
-);
+)){
+    echo "Datos correctos";
+}else{
+    echo "Introduce correctamente los datos";
+};
 
 añadirTarea();
+
+include VIEW_PATH."CrearTarea.php";

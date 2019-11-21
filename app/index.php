@@ -1,4 +1,4 @@
 <?php
 include 'config.php';
 
-include VIEW_PATH."MenuPrincipal.php";
+header('Location: controller/ctrlMenuPrincipal.php');

@@ -1,4 +1,5 @@
 <p>
-    <a href= "controller/ctrlmenu.php?opc=crear">Crear tarea</a>
-    <a href= "controller/ctrlmenu.php?opc=ver">Ver tareas</a>
+    <a href="ctrlMenuPrincipal.php">Inicio</a>
+    <a href="ctrlVerTareas.php">Ver tareas</a>
+    <a href="ctrlCreartarea.php">Crear tarea</a>
 </p>
