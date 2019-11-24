@@ -4,59 +4,28 @@ include CTRL_PATH . 'ValorPost.php';
 include MODEL_PATH . 'Funciones Base de datos.php';
 include "ComprobarErrores.php";
 
-/*$descripcion = ValorPost("descripcion");
-$nombreContacto = ValorPost("nombrecontacto");
-$telefono = ValorPost("telefono");
-$correo = ValorPost("correo");
-$direccion = ValorPost("direccion");
-$poblacion = ValorPost("poblacion");
-$CD = ValorPost("codigopostal");
-$provincia = ValorPost("provincia");
-$estado = ValorPost("estado");
-$Fcreacion = ValorPost("Fcreacion");
-$Frealizacion = ValorPost("Frealizacion");
-$Aanterior = ValorPost("Aanterior");
-$Aposterior = ValorPost("Aposterior");
-$operario = ValorPost("operariosAsig");*/
+$valores = [
+    "descripcion" => ValorPost("descripcion"),
+    "nombrecontacto" => ValorPost("nombrecontacto"),
+    "telefono" => ValorPost("telefono"),
+    "correo" => ValorPost("correo"),
+    "direccion" => ValorPost("direccion"),
+    "poblacion" => ValorPost("poblacion"),
+    "codigopostal" => ValorPost("codigopostal"),
+    "provincia" => ValorPost("provincia"),
+    "estado" => ValorPost("estado"),
+    "Fcreacion" => ValorPost("Fcreacion"),
+    "Frealizacion" => ValorPost("Frealizacion"),
+    "Aanterior" => ValorPost("Anterior"),
+    "Aposterior" => ValorPost("Aposterior"),
+    "operariosAsig" => ValorPost("operariosAsig")
+];
 
-/*comprobar(
-    $descripcion,
-    $nombreContacto,
-    $telefono,
-    $correo,
-    $direccion,
-    $poblacion,
-    $CD,
-    $provincia,
-    $estado,
-    $Fcreacion,
-    $Frealizacion,
-    $Aanterior,
-    $Aposterior,
-    $operario
-);*/
+comprobarTODO($valores);
 
-if(comprobarTODO(
-    ValorPost("descripcion"),
-    ValorPost("nombrecontacto"),
-    ValorPost("telefono"),
-    ValorPost("correo"),
-    ValorPost("direccion"),
-    ValorPost("poblacion"),
-    ValorPost("codigopostal"),
-    ValorPost("provincia"),
-    ValorPost("estado"),
-    ValorPost("Fcreacion"),
-    ValorPost("Frealizacion"),
-    ValorPost("Aanterior"),
-    ValorPost("Aposterior"),
-    ValorPost("operariosAsig")
-)){
-    echo "Datos correctos";
+if(!$HayError){
+    echo $HayError."Datos correctos";
+    añadirTarea();
 }else{
-    echo "Introduce correctamente los datos";
+    include VIEW_PATH."CrearTarea.php";
 };
-
-añadirTarea();
-
-include VIEW_PATH."CrearTarea.php";
