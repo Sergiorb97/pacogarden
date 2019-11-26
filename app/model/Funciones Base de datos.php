@@ -37,6 +37,4 @@ function esOperario($nombre, $contraseña)
     return false;
 }
 
-function añadirTarea(){
-    
-}
+

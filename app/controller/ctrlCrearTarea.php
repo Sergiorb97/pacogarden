@@ -1,8 +1,8 @@
 <?php
 include '../config.php';
 include CTRL_PATH . 'ValorPost.php';
-include MODEL_PATH . 'Funciones Base de datos.php';
-include "ComprobarErrores.php";
+include MODEL_PATH . 'FuncionesCrearTarea.php';
+include "ComprobarErroresCrearTarea.php";
 
 $valores = [
     "descripcion" => ValorPost("descripcion"),
@@ -18,14 +18,14 @@ $valores = [
     "Frealizacion" => ValorPost("Frealizacion"),
     "Aanterior" => ValorPost("Anterior"),
     "Aposterior" => ValorPost("Aposterior"),
-    "operariosAsig" => ValorPost("operariosAsig")
+    "operarioAsig" => ValorPost("operarioAsig")
 ];
 
 comprobarTODO($valores);
 
 if(!$HayError){
-    echo $HayError."Datos correctos";
-    añadirTarea();
+    añadirTarea($valores);
+    include VIEW_PATH."exito.php";
 }else{
     include VIEW_PATH."CrearTarea.php";
 };

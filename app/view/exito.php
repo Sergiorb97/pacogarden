@@ -12,7 +12,7 @@
     <header><?php include TEMPLATE_PATH . "header.php" ?></header>
     <div id="menu"><?php include TEMPLATE_PATH . "menu.php" ?></div>
     <div id="cuerpo">
-    <p>En construcción..</p>
+    <p>Acción completada con exito.</p>
         </form>
     </div>
     <div id="cuerpo"><?php include TEMPLATE_PATH . "footer.php" ?></div>
