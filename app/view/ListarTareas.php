@@ -12,5 +12,3 @@
     <header><?php include TEMPLATE_PATH . "header.php" ?></header>
     <div id="menu"><?php include TEMPLATE_PATH . "menu.php" ?></div>
     <div id="cuerpo"><?php include VIEW_PATH . "lista.php" ?></div>
-    <div id="cuerpo"><?php include TEMPLATE_PATH . "footer.php" ?></div>
-    <!--Añadir paginacion al footer-->
