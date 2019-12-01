@@ -29,3 +29,10 @@ if(!$HayError){
 }else{
     include VIEW_PATH."CrearTarea.php";
 };
+
+function guardarSelect($selectName,$opc){
+    if(isset($selectName) && isset($_POST[$selectName])){
+        if($_POST[$selectName] == $opc)
+            return "selected";
+    }
+}

@@ -2,22 +2,33 @@
 require "Base de datos.php";
 $db = Db::getInstance();
 
-function tareas($mostrar)
+function Tareas($mostrar)
 {
     $db = $GLOBALS['db'];
     $sql = "SELECT * FROM tareas ORDER BY fecha_creacion DESC LIMIT ".$mostrar.",10";
     $rs = $db->Consulta($sql);
 
-    while ($reg = $db->LeeRegistro($rs)) {
-        $creacion = date("d-m-Y", strtotime($reg['fecha_creacion']));
-        $realizacion = date("d-m-Y", strtotime($reg['fecha_realizacion']));
+    $datos = [];
 
-        echo "<tr><td>" . $reg['tarea_id'] . "</td><td>" . $reg['descripcion'] . "</td><td>" . $reg['nombrecontacto'] . "</td><td>" . $reg['telefono'] .
-            "</td><td>" . $reg['correo_electronico'] . "</td><td>" . $reg['direccion'] . "</td><td>" . $reg['poblacion'] . "</td><td>" . $reg['codigo_postal'] .
-            "</td><td>" . $reg['provincia'] . "</td><td>" . $reg['estado'] . "</td><td>" . $creacion . "</td><td>" . $realizacion .
-            "</td><td>" . $reg['anotacion_anterior'] . "</td><td>" . $reg['anotacion_posterior'] . "</td><td>" . $reg['administrador_id'] .
-            "</td><td>" . $reg['operario_id'] . "</td></tr>";
+    while ($reg = $db->LeeRegistro($rs)) {
+        $reg['fecha_creacion'] = date("d-m-Y", strtotime($reg['fecha_creacion']));
+        $reg['fecha_realizacion'] = date("d-m-Y", strtotime($reg['fecha_realizacion']));
+        $datos[] = $reg;
+            
     }
+    return $datos;
+}
+
+function TareaSeleccionada($id){
+    $db = $GLOBALS['db'];
+    $sql = "SELECT * FROM tareas WHERE tarea_id = ".$id;
+    $rs = $db->Consulta($sql);
+    while ($reg = $db->LeeRegistro($rs)) {
+        $reg['fecha_creacion'] = date("d-m-Y", strtotime($reg['fecha_creacion']));
+        $reg['fecha_realizacion'] = date("d-m-Y", strtotime($reg['fecha_realizacion']));
+        $datos[] = $reg;
+    }
+    return $datos;
 }
 
 function NumTareas(){
@@ -31,5 +42,21 @@ function NumTareas(){
     }
 
 }
+
+function existeOperarioModificar($id){
+    $db = $GLOBALS['db'];
+    $sql = "SELECT COUNT(*) as count FROM operarios WHERE operario_id=".$id;
+    $rs = $db->Consulta($sql);
+
+    while ($reg = $db->LeeRegistro($rs)) {
+        if ($reg['count'] == 1) {
+            return true;
+        }
+    }
+    return false;
+}
+
+include 'FuncionesModificar.php';
+
 
 

@@ -5,17 +5,27 @@
         <th>Nombre contacto</th>
         <th>Teléfono</th>
         <th>Correo</th>
-        <th>Dirección</th>
-        <th>Población</th>
-        <th>CP</th>
         <th>Provincia</th>
         <th>Estado</th>
         <th>Creación</th>
-        <th>Realización</th>
-        <th>Anotación anterior</th>
-        <th>Anotación posterior</th>
-        <th>Administrador</th>
         <th>Operario</th>
     </tr>
-    <?php mostrarLista() ?>
+    <?php
+        $datos = obtenerDatos();
+        foreach ($datos as $dato) {
+    ?>
+        <tr>
+            <td><?= $dato['tarea_id'] ?></td>
+            <td><?= $dato['descripcion'] ?></td>
+            <td><?= $dato['nombrecontacto'] ?></td>
+            <td><?= $dato['telefono'] ?></td>
+            <td><?= $dato['correo_electronico'] ?></td>
+            <td><?= $dato['provincia'] ?></td>
+            <td><?= $dato['estado'] ?></td>
+            <td><?= $dato['fecha_creacion'] ?></td>
+            <td><?= $dato['operario_id'] ?></td>
+            <td><a href="../controller/ctrlMasInfo.php?id= <?= $dato['tarea_id'] ?> ">Ver más</a></td>
+
+        </tr>
+    <?php } ?>
 </table>

@@ -187,10 +187,3 @@ function hayOperario($operario){
         return false;
     }
 }
-
-function guardarSelect($selectName,$opc){
-    if(isset($selectName) && isset($_POST[$selectName])){
-        if($_POST[$selectName] == $opc)
-            return "selected";
-    }
-}

@@ -12,6 +12,7 @@
     <header><?php include TEMPLATE_PATH . "header.php" ?></header>
     <div id="menu"><?php include TEMPLATE_PATH . "menu.php" ?></div>
     <div id="cuerpo">
+        <p>Creando tarea:</p>
         <form method="POST" action="../controller/ctrlCrearTarea.php">
             <p><span style="color:red">*</span>Descripcion: <input type="text" name="descripcion" value = <?= ValorPost("descripcion") ?>>  <?=VerError("descripcion")?></p>
             <p><span style="color:red">*</span>Nombre de contacto: <input type="text" name="nombrecontacto" value = <?= ValorPost("nombrecontacto") ?>>  <?=VerError("nombrecontacto")?></p>
@@ -83,7 +84,7 @@
                     <option <?= guardarSelect("estado","Cancelada") ?>>Cancelada</option>
                 </select>
             </p>
-            <p><span style="color:red">*</span>Fecha de creación de la tarea: <input type="text" name="Fcreacion" value = "<?= fechaCrear()?>" readonly></p>
+            <!--<p><span style="color:red">*</span>Fecha de creación de la tarea: <input type="text" name="Fcreacion" value = "<?= fechaCrear()?>" readonly></p>-->
             <p><span style="color:red">*</span>Fecha de realización de la tarea: <input type="text" name="Frealizacion" value = <?= ValorPost("Frealizacion") ?>>  <?=VerError("Frealizacion")?></p>
             <p>Anotación anterior a la realización de la tarea: <input type="text" name="Aanterior" value = <?= ValorPost("Aanterior") ?>></p>
             <p>Anotación posterior a la realización de la tarea: <input type="text" name="Aposterior" value = <?= ValorPost("Aposterior") ?>></p>
