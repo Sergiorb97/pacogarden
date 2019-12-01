@@ -32,15 +32,6 @@ function tomarValor($campo)
     }
 }
 
-function mostrarID($id)
-{
-    if ($_GET) {
-        return $_GET['tareaid'];
-    } else {
-        return ValorPost($id);
-    }
-}
-
 function guardarSelectModificar($selectName, $opc)
 {
     if (isset($selectName) && isset($_POST[$selectName])) {

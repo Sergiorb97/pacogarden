@@ -22,7 +22,7 @@ function NumPags()
 {
     $num = NumTareas();
     if ($num % 10 == 0) {
-        return $num;
+        return $num/10;
     } else if ($num % 10 != 0) {
         $x = $num / 10;
         return intval($x) + 1;

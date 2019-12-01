@@ -1,4 +1,6 @@
 <?php
+/*No es necesario instanciar aqui la clase Db porque esta funcion esta incluida en funciones ver tarea
+ para poder reutiliza las funciones de vertareas en modificar*/
 function modificarTarea($valores,$id)
 {
     $telefono = str_replace(" ", "", $valores['telefono']);

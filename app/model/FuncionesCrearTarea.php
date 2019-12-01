@@ -11,7 +11,6 @@ function añadirTarea($valores)
     $FinSeconds = strtotime($correct);
     $finDate = date('Y-m-d', $FinSeconds);
 
-
     $db = $GLOBALS['db'];
     $sql = "INSERT INTO tareas (
         tarea_id, descripcion, nombrecontacto, telefono, correo_electronico,direccion,

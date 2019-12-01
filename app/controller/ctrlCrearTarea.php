@@ -16,7 +16,7 @@ $valores = [
     "estado" => ValorPost("estado"),
     "Fcreacion" => ValorPost("Fcreacion"),
     "Frealizacion" => ValorPost("Frealizacion"),
-    "Aanterior" => ValorPost("Anterior"),
+    "Aanterior" => ValorPost("Aanterior"),
     "Aposterior" => ValorPost("Aposterior"),
     "operarioAsig" => ValorPost("operarioAsig")
 ];
