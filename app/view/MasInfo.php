@@ -4,7 +4,7 @@ foreach ($datos as $dato) {
     ?>
     <p>
         <a href="../controller/ctrlModificar.php?tareaid= <?= $dato['tarea_id'] ?> ">Modificar tarea</a>
-        <a href="../controller/ctrlCompletarTarea.php?tareaid= <?= $dato['tarea_id'] ?> ">Completar tarea</a>
+        <a href="../controller/ctrlCompletar.php?tareaid= <?= $dato['tarea_id'] ?> ">Completar tarea</a>
         <a href="../controller/ctrlEliminarTarea.php?tareaid= <?= $dato['tarea_id'] ?> ">Eliminar tarea</a>
     </p>
     <p>Tarea ID: <?= $dato['tarea_id'] ?></p>

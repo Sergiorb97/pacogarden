@@ -31,6 +31,16 @@ function TareaSeleccionada($id){
     return $datos;
 }
 
+function obtenerProvincias(){
+    $db = $GLOBALS['db'];
+    $sql = "SELECT * FROM tbl_provincias";
+    $rs = $db->Consulta($sql);
+    while ($reg = $db->LeeRegistro($rs)) {
+        $datos[] = $reg['nombre'];
+    }
+    return $datos;
+}
+
 function NumTareas(){
     $db = $GLOBALS['db'];
 
@@ -57,6 +67,7 @@ function existeOperarioModificar($id){
 }
 
 include 'FuncionesModificar.php';
+include 'FuncionesCompletar.php';
 
 
 

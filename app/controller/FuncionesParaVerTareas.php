@@ -1,9 +1,23 @@
 <?php
 function obtenerDatos(){
     if ($_GET) {
-        return $datos = Tareas(Regmostrar($_GET['pag']));
+        return Tareas(Regmostrar($_GET['pag']));
     } else {
-        return $datos = Tareas(0);
+        return Tareas(0);
+    }
+}
+
+function mostrarProvincias(){
+    $provincias = obtenerProvincias();
+    foreach($provincias as $provincia){
+        echo"<option ".guardarSelect('provincia',$provincia).">".$provincia."</option>";
+    } 
+}
+
+function guardarSelect($selectName,$opc){
+    if(isset($selectName) && isset($_POST[$selectName])){
+        if($_POST[$selectName] == $opc)
+            return "selected";
     }
 }
 

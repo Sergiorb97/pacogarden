@@ -36,3 +36,13 @@ function existeOperario($id){
     }
     return false;
 }
+
+function obtenerProvincias(){
+    $db = $GLOBALS['db'];
+    $sql = "SELECT nombre FROM tbl_provincias";
+    $rs = $db->Consulta($sql);
+    while ($reg = $db->LeeRegistro($rs)) {
+        $datos[] = $reg['nombre'];
+    }
+    return $datos;
+}
