@@ -68,6 +68,7 @@ function existeOperarioModificar($id){
 
 include 'FuncionesModificar.php';
 include 'FuncionesCompletar.php';
+include 'FuncionesBuscar.php';
 
 
 

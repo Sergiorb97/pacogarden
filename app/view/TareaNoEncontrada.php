@@ -16,7 +16,7 @@
             <?php include VIEW_PATH . "formularioBuscarTarea.php" ?>
         </div>
         <div id="lista">
-            Las tareas encontradas aparecerán aquí.
+            <p>No se ha encontrado ninguna tarea con las especificaciones dadas.</p>
         </div>
     </div>
     <div id="cuerpo"><?php include TEMPLATE_PATH . "footer.php" ?></div>
