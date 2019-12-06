@@ -11,7 +11,6 @@
         <th>Operario</th>
     </tr>
     <?php
-        $datos = obtenerDatos();
         foreach ($datos as $dato) {
     ?>
         <tr>

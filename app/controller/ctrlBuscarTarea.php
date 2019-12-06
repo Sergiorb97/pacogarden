@@ -4,6 +4,7 @@ include CTRL_PATH . 'ValorPost.php';
 include MODEL_PATH . 'FuncionesVerTarea.php';
 include CTRL_PATH . 'FuncionesParaVerTareas.php';
 include CTRL_PATH.'ComprobarErroresBuscar.php';
+include CTRL_PATH . 'check_Sesion.php';
 
 comprobarTODOBuscar($_POST);
 //Comprobar qué queremos filtrar y no olvidar el paginado

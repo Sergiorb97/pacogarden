@@ -1,4 +1,4 @@
 <?php
 include 'config.php';
 
-header('Location: controller/ctrlMenuPrincipal.php');
+header('Location: controller/ctrlLogin.php');

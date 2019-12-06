@@ -2,13 +2,6 @@
 require "Base de datos.php";
 $db = Db::getInstance();
 
-function allTareas()
-{
-    $sql = "SELECT * FROM tareas";
-    $rs = $GLOBALS['db']->Consulta($sql);
-    return $rs;
-}
-
 function esAdmin($nombre, $contraseña)
 {
     $db = $GLOBALS['db'];
