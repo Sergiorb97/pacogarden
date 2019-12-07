@@ -2,7 +2,7 @@
 include '../config.php';
 include CTRL_PATH . 'ValorPost.php';
 include MODEL_PATH . 'FuncionesEliminar.php';
-include CTRL_PATH . 'check_Sesion.php';
+include CTRL_PATH . 'check_Admin.php';
 
 if (isset($_GET['opc'])) {
     if ($_GET['opc'] == "si") {

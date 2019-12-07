@@ -9,7 +9,7 @@ include CTRL_PATH . 'check_Sesion.php';
 comprobarTODOBuscar($_POST);
 //Comprobar qué queremos filtrar y no olvidar el paginado
 if(!$HayError && $_POST){
-    $datos = obtenerDatosFILTRADOS($_POST,filtros($_POST));
+    $datos = TareasFiltradas(filtros($_POST));
     if(empty($datos)){
         include VIEW_PATH . 'TareaNoEncontrada.php';
     }else{

@@ -12,11 +12,9 @@
     <header><?php include TEMPLATE_PATH . "header.php" ?></header>
     <div id="menu"><?php include TEMPLATE_PATH . "menu.php" ?></div>
     <div id="cuerpo">
-        <div id="filtrado">
-            <?php include VIEW_PATH . "formularioBuscarTarea.php" ?>
-        </div>
-        <div id="lista">
-            <?php include VIEW_PATH . "lista.php" ?>
-        </div>
+        <p>
+            <a href="../controller/ctrlCrearUsuario.php">Añadir usuario</a>
+            <a href="../controller/ctrlVerUsuarios.php">Lista de usuarios</a>
+        </p>
     </div>
     <div id="cuerpo"><?php include TEMPLATE_PATH . "footer.php" ?></div>

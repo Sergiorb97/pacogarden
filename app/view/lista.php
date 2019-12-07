@@ -24,6 +24,9 @@
             <td><?= $dato['fecha_creacion'] ?></td>
             <td><?= $dato['operario_id'] ?></td>
             <td><a href="../controller/ctrlMasInfo.php?id= <?= $dato['tarea_id'] ?> ">Ver más</a></td>
+            <td><a href="../controller/ctrlModificar.php?tareaid= <?= $dato['tarea_id'] ?> ">Modificar</a></td>
+            <td><a href="../controller/ctrlCompletar.php?tareaid= <?= $dato['tarea_id'] ?> ">Completar</a></td>
+            <td><a href="../controller/ctrlEliminarTarea.php?tareaid= <?= $dato['tarea_id'] ?> ">Eliminar</a></td>
 
         </tr>
     <?php } ?>

@@ -10,8 +10,9 @@
 <div>
 <p>Inicio de sesión</p>
     <form method="POST" action="../controller/ctrlLogin.php">
-        <p>Inserta tu nombre de usuario: <input type="text" name="usuario"></p>
-        <p>Inserta tu contraseña: <input type="password" name="contraseña"></p>
+        <p>Inserta tu nombre de usuario: <input type="text" name="usuario" value="<?= ValorPost('usuario') ?>"></p>
+        <p>Inserta tu contraseña: <input type="password" name="contraseña" value="<?= ValorPost('contraseña') ?>"></p>
+        <p><?= VerErrorLogin() ?></p>
         <input type="submit">
     </form>
 </div>

@@ -4,7 +4,7 @@ include CTRL_PATH . 'ValorPost.php';
 include CTRL_PATH . 'FuncionesParaVerTareas.php';
 include MODEL_PATH . 'FuncionesCrearTarea.php';
 include "ComprobarErroresCrearTarea.php";
-include CTRL_PATH . 'check_Sesion.php';
+include CTRL_PATH . 'check_Admin.php';
 
 $valores = [
     "descripcion" => ValorPost("descripcion"),

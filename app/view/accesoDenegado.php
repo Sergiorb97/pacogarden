@@ -12,11 +12,7 @@
     <header><?php include TEMPLATE_PATH . "header.php" ?></header>
     <div id="menu"><?php include TEMPLATE_PATH . "menu.php" ?></div>
     <div id="cuerpo">
-        <div id="filtrado">
-            <?php include VIEW_PATH . "formularioBuscarTarea.php" ?>
-        </div>
-        <div id="lista">
-            <?php include VIEW_PATH . "lista.php" ?>
-        </div>
+    <p style="color:red">No tienes los permisos necesarios para acceder a esta acción.</p>
+        </form>
     </div>
     <div id="cuerpo"><?php include TEMPLATE_PATH . "footer.php" ?></div>
