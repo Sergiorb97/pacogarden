@@ -11,15 +11,17 @@
 <body>
     <header><?php include TEMPLATE_PATH . "header.php" ?></header>
     <div id="menu"><?php include TEMPLATE_PATH . "menu.php" ?></div>
-    <div id="cuerpo">
+    <link rel="stylesheet" href="../../Assets/css/CrearUsuario.css">
+    <div class="contenedorCrear">
+        <h1>Crear Usuario</h1>
         <form method="POST" action="../controller/ctrlCrearUsuario.php">
-            <p>Nombre de usuario: <input type="text" name="user" value="<?= ValorPost('user') ?>">  <?= VerError('nombre') ?></p>
-            <p>Contraseña: <input type="password" name="pass" value="<?= ValorPost('pass') ?>">  <?= VerError('contraseña') ?></p>
-            <p><select name="tipo">
+            <p>Nombre de usuario<input type="text" class="btnCrear" name="user" value="<?= ValorPost('user') ?>">  <?= VerError('nombre') ?></p>
+            <p>Contraseña<input type="password" class="btnCrear" name="pass" value="<?= ValorPost('pass') ?>">  <?= VerError('contraseña') ?></p>
+            <p><select name="tipo" class="btnCrear">
                 <option <?= guardarSelect("tipo","Administrador") ?>>Administrador</option>
                 <option <?= guardarSelect("tipo","Operario") ?>>Operario</option>
             </select></p>
-            <input type="submit" value="Aceptar">
+            <button type="submit">Crear</button>
         </form>
     </div>
-    <div id="cuerpo"><?php include TEMPLATE_PATH . "footer.php" ?></div>
+    <div><?php include TEMPLATE_PATH . "footer.php" ?></div>

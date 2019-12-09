@@ -1,0 +1,99 @@
+.cuerpo.form-success .contenedor h1 {
+  transform: translateY(85px);
+}
+.partOne {
+  float: left;
+  margin-left: 10%;
+}
+.partTwo {
+  float: right;
+  margin-right: 10%;
+}
+
+.partThree{
+    margin-top: 60%;
+    margin-left: 38%;
+    position: absolute;
+}
+
+.contenedor {
+  width: 1200px;
+  height: 1000px;
+  margin: 100px auto;
+  padding: 5px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+.boton {
+  cursor: pointer;
+  color: #53e3a6;
+  background: white;
+}
+.contenedor h1 {
+  font-size: 40px;
+  transition-duration: 1s;
+  transition-timing-function: ease-in- put;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+}
+form {
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+
+form input, select {
+  appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 250px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 2px auto;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  font-weight: 300;
+}
+form input:hover, select:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+form input:focus, select:focus {
+  background-color: white;
+  width: 300px;
+  color: #53e3a6;
+}
+form button {
+  appearance: none;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  color: #53e3a6;
+  border-radius: 3px;
+  width: 240px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 18px;
+  transition-duration: 0.25s;
+}
+form button:hover {
+  background-color: #f5f7f9;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+} 
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}

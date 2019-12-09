@@ -12,7 +12,7 @@
     <header><?php include TEMPLATE_PATH . "header.php" ?></header>
     <div id="menu"><?php include TEMPLATE_PATH . "menu.php" ?></div>
     <div id="cuerpo">
-    <p style="color:red">No tienes los permisos necesarios para acceder a esta acción.</p>
-        </form>
+        <h2 style="color:red; margin-top:10%;margin-left:26%">No tienes los permisos necesarios para acceder a esta acción.</h2>
+        <img src="../../Assets/img/denegado.png" style="margin:3% 43%; width:150px; height:150px" title="Donde crees que vas">
     </div>
     <div id="cuerpo"><?php include TEMPLATE_PATH . "footer.php" ?></div>

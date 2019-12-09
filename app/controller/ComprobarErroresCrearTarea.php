@@ -18,25 +18,25 @@ function comprobarTODO($valores) {
     }
 
     if(!tel($valores['telefono'])){
-        $errores['telefono'] = "Debes introducir un formato de número de teléfono correcto.";
+        $errores['telefono'] = "Introduce un formato de número de teléfono correcto.";
         $HayError = true;
     }
 
     if(!correo($valores['correo'])){
-        $errores['correo'] = "Debes introducir un formato de correo electrónico válido.";
+        $errores['correo'] = "Introduce un formato de correo electrónico válido.";
         $HayError = true;
     }
 
     if(!CP($valores['codigopostal'],$valores['provincia'])){
-        $errores['codigopostal'] = "Debes introducir un código postal válido.";
+        $errores['codigopostal'] = "Introduce un código postal válido.";
         $HayError = true;
     }
 
     if(fechaFin($valores['Frealizacion']) == 1){
-        $errores['Frealizacion'] = "Los formatos válidos son: dd/mm/aaaa ó dd-mm-aaaa ó dd mm aaaa.";
+        $errores['Frealizacion'] = "Los formatos válidos son: dd/mm/aaaa ó dd-mm-aaaa.";
         $HayError = true;
     }else if(fechaFin($valores['Frealizacion']) == 2){
-        $errores['Frealizacion'] = "El día introducide no se corresponde con el mes introducido.";
+        $errores['Frealizacion'] = "El día introducido no se corresponde con el mes introducido.";
         $HayError = true;
     }else if(fechaFin($valores['Frealizacion']) == 3){
         $errores['Frealizacion'] = "La fecha de realización debe ser superior a la de creación.";

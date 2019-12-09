@@ -17,20 +17,20 @@ function comprobarTODOBuscar($valores)
 
     if (!empty($valores['creacion'])) {
         if (fechaFin($valores['creacion']) == 1) {
-            $errores['creacion'] = "Los formatos válidos son: dd/mm/aaaa ó dd-mm-aaaa ó dd mm aaaa.";
+            $errores['creacion'] = "Los formatos válidos son: dd/mm/aaaa ó dd-mm-aaaa.";
             $HayError = true;
         } else if (fechaFin($valores['creacion']) == 2) {
-            $errores['realizacion'] = "El día introducide no se corresponde con el mes introducido.";
+            $errores['realizacion'] = "El día introducide no corresponde con el mes.";
             $HayError = true;
         }
     }
 
     if (!empty($valores['realizacion'])) {
         if (fechaFin($valores['realizacion']) == 1) {
-            $errores['realizacion'] = "Los formatos válidos son: dd/mm/aaaa ó dd-mm-aaaa ó dd mm aaaa.";
+            $errores['realizacion'] = "Los formatos válidos son: dd/mm/aaaa ó dd-mm-aaaa.";
             $HayError = true;
         } else if (fechaFin($valores['realizacion']) == 2) {
-            $errores['realizacion'] = "El día introducide no se corresponde con el mes introducido.";
+            $errores['realizacion'] = "El día introducido no corresponde con el mes.";
             $HayError = true;
         }
     }
@@ -42,7 +42,7 @@ function VerError($campo)
     global $errores;
     if (!empty($_POST)) {
         if (isset($errores[$campo])) {
-            return '<span style="color:red">' . $errores[$campo] . '</span>';
+            return $errores[$campo];
         }
     }
 }

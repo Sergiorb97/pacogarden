@@ -11,8 +11,12 @@
 <body>
     <header><?php include TEMPLATE_PATH . "header.php" ?></header>
     <div id="menu"><?php include TEMPLATE_PATH . "menu.php" ?></div>
-    <form>
-        <p>¿ Realmente deseas eliminar el <?= $tipo ?> con id: <?= $id ?>?</p>
-        <p><a href="../controller/ctrlEliminarUsuario.php?opc=si&id=<?= $id ?>&tipo=<?= $tipo ?>">Si</a> <a href="../controller/ctrlEliminarUsuario.php?opc=no">No</a></p>
+    <link rel="stylesheet" href="../../Assets/css/Paginacion.css">
+    <form style="margin: 10% 29%">
+        <h2>¿ Realmente deseas eliminar el <span style="color:red"><?= $tipo ?></span> con <span  style="color:red">ID: <?= $id ?></span>?</h2>
+        <h3 style="margin-left: 30%">
+            <a href="../controller/ctrlEliminarUsuario.php?opc=si&id=<?= $id ?>&tipo=<?= $tipo ?>" class="anim">Si</a>
+            <a href="../controller/ctrlEliminarUsuario.php?opc=no" style="margin-left:80px"  class="anim">No</a>
+        </h3>
     </form>
     <div id="cuerpo"><?php include TEMPLATE_PATH . "footer.php" ?></div>

@@ -1,0 +1,92 @@
+.FiltrosContainer {
+  width: 700px;
+  height: 620px;
+  margin: 100px auto;
+  padding: 5px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.FiltrosContainer h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.FiltrosContainer p {
+  margin-top: 20px;
+  padding-left: 10%;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.FiltrosContainer p span{
+    margin-left: 70px;
+    color: red;
+}
+
+
+form .btnFiltrar {
+  appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 200px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  font-weight: 300;
+}
+
+form .btnFiltrar:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+form .btnFiltrar:focus {
+  background-color: white;
+  width: 250px;
+  color: #53e3a6;
+}
+
+form button {
+  appearance: none;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  color: #53e3a6;
+  margin-left: 31%;
+  margin-top: 20px;
+  border-radius: 3px;
+  width: 240px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 18px;
+  transition-duration: 0.25s;
+}
+form button:hover {
+  background-color: #f5f7f9;
+}
+
+#Prelista{
+    width: 600px;
+    height: 80px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 5px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+} 
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}

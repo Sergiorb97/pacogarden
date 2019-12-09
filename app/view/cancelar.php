@@ -12,7 +12,6 @@
     <header><?php include TEMPLATE_PATH . "header.php" ?></header>
     <div id="menu"><?php include TEMPLATE_PATH . "menu.php" ?></div>
     <div id="cuerpo">
-    <p>Se ha cancelado la acción.</p>
-        </form>
+        <h2 style="margin:10% 35%">Se ha cancelado la acción.</h2>
     </div>
     <div id="cuerpo"><?php include TEMPLATE_PATH . "footer.php" ?></div>

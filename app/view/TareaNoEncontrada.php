@@ -15,8 +15,8 @@
         <div id="filtrado">
             <?php include VIEW_PATH . "formularioBuscarTarea.php" ?>
         </div>
-        <div id="lista">
-            <p>No se ha encontrado ninguna tarea con las especificaciones dadas.</p>
+        <div id="Prelista">
+            <h2>No se ha encontrado ninguna tarea con las especificaciones dadas.</h2>
         </div>
     </div>
     <div id="cuerpo"><?php include TEMPLATE_PATH . "footer.php" ?></div>

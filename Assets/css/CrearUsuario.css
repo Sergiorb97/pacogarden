@@ -1,0 +1,85 @@
+.contenedorCrear{
+    width: 700px;
+    height: 500px;
+    display: block;
+    margin: 100px auto;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.contenedorCrear h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contenedorCrear p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fondo p{
+    margin-left: 70px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+form .btnCrear{
+    appearance: none;
+    outline: 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 250px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin-top: 5px;
+    margin-left: 30%;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    font-weight: 300;
+  }
+  form .btnCrear:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  form .btnCrear:focus{
+    background-color: white;
+    width: 300px;
+    color: #53e3a6;
+  }
+  form button {
+    appearance: none;
+    outline: 0;
+    background-color: white;
+    border: 0;
+    padding: 10px 15px;
+    color: #53e3a6;
+    margin-left: 31%;
+    margin-top: 20px;
+    border-radius: 3px;
+    width: 240px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 18px;
+    transition-duration: 0.25s;
+  }
+  form button:hover {
+    background-color: #f5f7f9;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}

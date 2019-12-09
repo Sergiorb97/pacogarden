@@ -44,6 +44,6 @@ function VerErrorLogin()
 {
     global $errores;
     if (isset($errores['datos'])) {
-        return '<span style="color:red">' . $errores['datos'] . '</span>';
+        return '<p class="error" style="color:#eb5638">' . $errores['datos'] . '</p>';
     }
 }

@@ -11,4 +11,8 @@
     <body>
         <header><?php include TEMPLATE_PATH . "header.php" ?></header>
         <div id="menu"><?php include TEMPLATE_PATH . "menu.php" ?></div>
+        <link rel="stylesheet" href="../../Assets/css/MenuPrincipal.css">
+        <div id="bienvenido">
+            <p>Bienvenido <?= $_SESSION['usuario'] ?></p>
+        </div>
         <div id="cuerpo"><?php include TEMPLATE_PATH . "footer.php" ?></div>
